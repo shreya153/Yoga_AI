@@ -16,20 +16,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ImageButton exe = (ImageButton)findViewById(R.id.exerc);
         ImageButton yoga = (ImageButton)findViewById(R.id.yoga);
-        /*exe.setOnClickListener(new View.OnClickListener() {
+        exe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,.class);
+                Intent intent = new Intent(MainActivity.this,exercise.class);
                 startActivity(intent);
             }
         });
         yoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, .class);
+                Intent i = new Intent(MainActivity.this,yogastart.class);
                 startActivity(i);
             }
-        });*/
+        });
 
 
     }
