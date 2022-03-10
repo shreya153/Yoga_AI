@@ -3,37 +3,55 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/grey"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/WelcomeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cinzel_decorative"
+        android:textAlignment="center"
+        android:textSize="20dp" />
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/steps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        android:layout_margin="10dp"
+        android:layout_below="@+id/WelcomeName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/grey"
+        android:outlineSpotShadowColor="@color/orange"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
         app:cardMaxElevation="12dp"
         app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
-        >
+        app:cardUseCompatPadding="true">
+
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <TextView
+                android:id="@+id/stepstracker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Steps Tracker"
                 android:padding="20dp"
-                android:textSize="20dp"
-                android:id="@+id/stepstracker"
+                android:text="Steps Tracker"
                 android:textColor="@color/white"
-                />
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_width="179dp"
@@ -54,6 +72,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
+        android:outlineSpotShadowColor="@color/orange"
         android:backgroundTint="@color/grey"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
@@ -74,20 +93,20 @@
                 android:textSize="20dp" />
 
             <ImageButton
-                android:layout_margin="15dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/yoga"
-                android:background="@drawable/yoga"
-                android:backgroundTint="@color/white"/>
-            <ImageButton
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="15dp"
+                android:background="@drawable/yoga"
+                android:backgroundTint="@color/white" />
+
+            <ImageButton
                 android:id="@+id/exerc"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
                 android:background="@drawable/jogging"
-                android:backgroundTint="@color/white"
-                />
+                android:backgroundTint="@color/white" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -4,23 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".exercise">
 
     <ImageButton
         android:id="@+id/backbutton"
-        android:layout_margin="20dp"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:background="@drawable/back" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="TODO" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/backbutton"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_below="@+id/backbutton"
         android:backgroundTint="@color/grey"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"

@@ -4,21 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".yogastart">
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_margin="20dp"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:background="@drawable/back" />
-    <Button
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/orange" />
+
+    <androidx.cardview.widget.CardView
+        android:outlineSpotShadowColor="@color/orange"
+        android:id="@+id/steps"
+        android:layout_below="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Session"
-        android:layout_centerVertical="true"
-        android:fontFamily="@font/akronim"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/grey"
-        />
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/alata"
+            android:text="Start Session"
+            android:textColor="@color/grey" />
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
